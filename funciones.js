@@ -694,42 +694,42 @@ function restart() {
 
   // Reset the board
   var tabla = document.getElementById("Tablero");
-  tabla.rows[2].cells[1].style = PeonN;
-  tabla.rows[2].cells[2].style = PeonN;
-  tabla.rows[2].cells[3].style = PeonN;
-  tabla.rows[2].cells[4].style = PeonN;
-  tabla.rows[2].cells[5].style = PeonN;
-  tabla.rows[2].cells[6].style = PeonN;
-  tabla.rows[2].cells[7].style = PeonN;
-  tabla.rows[2].cells[8].style = PeonN;
+  tabla.rows[2].cells[1].style = "background-image: url(PeonN.png); background-size:cover;";
+  tabla.rows[2].cells[2].style = "background-image: url(PeonN.png); background-size:cover;";
+  tabla.rows[2].cells[3].style = "background-image: url(PeonN.png); background-size:cover;";
+  tabla.rows[2].cells[4].style = "background-image: url(PeonN.png); background-size:cover;";
+  tabla.rows[2].cells[5].style = "background-image: url(PeonN.png); background-size:cover;";
+  tabla.rows[2].cells[6].style = "background-image: url(PeonN.png); background-size:cover;";
+  tabla.rows[2].cells[7].style = "background-image: url(PeonN.png); background-size:cover;";
+  tabla.rows[2].cells[8].style = "background-image: url(PeonN.png); background-size:cover;";
 
-  tabla.rows[7].cells[1].style = PeonB;
-  tabla.rows[7].cells[2].style = PeonB;
-  tabla.rows[7].cells[3].style = PeonB;
-  tabla.rows[7].cells[4].style = PeonB;
-  tabla.rows[7].cells[5].style = PeonB;
-  tabla.rows[7].cells[6].style = PeonB;
-  tabla.rows[7].cells[7].style = PeonB;
-  tabla.rows[7].cells[8].style = PeonB;
+  tabla.rows[7].cells[1].style = "background-image: url(PeonB.png); background-size:cover;";
+  tabla.rows[7].cells[2].style = "background-image: url(PeonB.png); background-size:cover;";
+  tabla.rows[7].cells[3].style = "background-image: url(PeonB.png); background-size:cover;";
+  tabla.rows[7].cells[4].style = "background-image: url(PeonB.png); background-size:cover;";
+  tabla.rows[7].cells[5].style = "background-image: url(PeonB.png); background-size:cover;";
+  tabla.rows[7].cells[6].style = "background-image: url(PeonB.png); background-size:cover;";
+  tabla.rows[7].cells[7].style = "background-image: url(PeonB.png); background-size:cover;";
+  tabla.rows[7].cells[8].style = "background-image: url(PeonB.png); background-size:cover;";
 
-  tabla.rows[8].cells[3].style = AlfilB;
-  tabla.rows[1].cells[3].style = AlfilN;
-  tabla.rows[8].cells[6].style = AlfilB;
-  tabla.rows[1].cells[6].style = AlfilN;
+  tabla.rows[8].cells[3].style = "background-image: url(AlfilB.png); background-size:cover;";
+  tabla.rows[1].cells[3].style = "background-image: url(AlfilN.png); background-size:cover;";
+  tabla.rows[8].cells[6].style = "background-image: url(AlfilB.png); background-size:cover;";
+  tabla.rows[1].cells[6].style = "background-image: url(AlfilN.png); background-size:cover;";
 
-  tabla.rows[8].cells[1].style = TorreB;
-  tabla.rows[1].cells[1].style = TorreN;
-  tabla.rows[8].cells[8].style = TorreB;
-  tabla.rows[1].cells[8].style = TorreN;
+  tabla.rows[8].cells[1].style = "background-image: url(TorreB.png); background-size:cover;";
+  tabla.rows[1].cells[1].style = "background-image: url(TorreN.png); background-size:cover;";
+  tabla.rows[8].cells[8].style = "background-image: url(TorreB.png); background-size:cover;";
+  tabla.rows[1].cells[8].style = "background-image: url(TorreN.png); background-size:cover;";
 
-  tabla.rows[8].cells[2].style = CaballoB;
-  tabla.rows[1].cells[2].style = CaballoN;
-  tabla.rows[8].cells[7].style = CaballoB;
-  tabla.rows[1].cells[7].style = CaballoN;
+  tabla.rows[8].cells[2].style = "background-image: url(CaballoB.png); background-size:cover;";
+  tabla.rows[1].cells[2].style = "background-image: url(CaballoN.png); background-size:cover;";
+  tabla.rows[8].cells[7].style = "background-image: url(CaballoB.png); background-size:cover;";
+  tabla.rows[1].cells[7].style = "background-image: url(CaballoN.png); background-size:cover;";
 
-  tabla.rows[8].cells[4].style = ReyB;
-  tabla.rows[1].cells[4].style = ReyN;
+  tabla.rows[8].cells[4].style = "background-image: url(ReyB.png); background-size:cover;";
+  tabla.rows[1].cells[4].style = "background-image: url(ReyN.png); background-size:cover;";
 
-  tabla.rows[8].cells[5].style = ReinaB;
-  tabla.rows[1].cells[5].style = ReinaN;
+  tabla.rows[8].cells[5].style = "background-image: url(ReinaB.png); background-size:cover;";
+  tabla.rows[1].cells[5].style = "background-image: url(ReinaN.png); background-size:cover;";
 }
