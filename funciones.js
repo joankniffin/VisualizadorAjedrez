@@ -676,7 +676,7 @@ function convertirRenglon(renglon) {
 
 
 
-function restart() {
+function restartgame() {
   // Reset the game state
   contadorPaso = 0;
   j = 0;
@@ -689,17 +689,47 @@ function restart() {
   posicion = "";
   jaque = "";
 
-  // Clear the textarea
-  document.getElementById("textarea1").value = "";
-
   // Clear the turn display
   document.getElementById("turno").innerHTML = "";
 
-  // Clear the board
+  // Reset the board
   var tabla = document.getElementById("Tablero");
-  for (var row = 0; row < tabla.rows.length; row++) {
-    for (var col = 0; col < tabla.rows[row].cells.length; col++) {
-      tabla.rows[row].cells[col].style = borrarCelda;
-    }
-  }
+  tabla.rows[2].cells[1].style = PeonN;
+  tabla.rows[2].cells[2].style = PeonN;
+  tabla.rows[2].cells[3].style = PeonN;
+  tabla.rows[2].cells[4].style = PeonN;
+  tabla.rows[2].cells[5].style = PeonN;
+  tabla.rows[2].cells[6].style = PeonN;
+  tabla.rows[2].cells[7].style = PeonN;
+  tabla.rows[2].cells[8].style = PeonN;
+
+  tabla.rows[7].cells[1].style = PeonB;
+  tabla.rows[7].cells[2].style = PeonB;
+  tabla.rows[7].cells[3].style = PeonB;
+  tabla.rows[7].cells[4].style = PeonB;
+  tabla.rows[7].cells[5].style = PeonB;
+  tabla.rows[7].cells[6].style = PeonB;
+  tabla.rows[7].cells[7].style = PeonB;
+  tabla.rows[7].cells[8].style = PeonB;
+
+  tabla.rows[8].cells[3].style = AlfilB;
+  tabla.rows[1].cells[3].style = AlfilN;
+  tabla.rows[8].cells[6].style = AlfilB;
+  tabla.rows[1].cells[6].style = AlfilN;
+
+  tabla.rows[8].cells[1].style = TorreB;
+  tabla.rows[1].cells[1].style = TorreN;
+  tabla.rows[8].cells[8].style = TorreB;
+  tabla.rows[1].cells[8].style = TorreN;
+
+  tabla.rows[8].cells[2].style = CaballoB;
+  tabla.rows[1].cells[2].style = CaballoN;
+  tabla.rows[8].cells[7].style = CaballoB;
+  tabla.rows[1].cells[7].style = CaballoN;
+
+  tabla.rows[8].cells[4].style = ReyB;
+  tabla.rows[1].cells[4].style = ReyN;
+
+  tabla.rows[8].cells[5].style = ReinaB;
+  tabla.rows[1].cells[5].style = ReinaN;
 }
