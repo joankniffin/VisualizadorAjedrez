@@ -677,51 +677,22 @@ function convertirRenglon(renglon) {
 
 
 function restart() {
-  var celdas = document.getElementById("Tablero");
-  celdas.rows[2].cells[1].style = PeonN;
-  celdas.rows[2].cells[2].style = PeonN;
-  celdas.rows[2].cells[3].style = PeonN;
-  celdas.rows[2].cells[4].style = PeonN;
-  celdas.rows[2].cells[5].style = PeonN;
-  celdas.rows[2].cells[6].style = PeonN;
-  celdas.rows[2].cells[7].style = PeonN;
-  celdas.rows[2].cells[8].style = PeonN;
+  var tabla = document.getElementById("Tablero");
+  var textarea = document.getElementById("textarea1");
+  var turnoElement = document.getElementById("turno");
 
-  celdas.rows[7].cells[1].style = PeonB;
-  celdas.rows[7].cells[2].style = PeonB;
-  celdas.rows[7].cells[3].style = PeonB;
-  celdas.rows[7].cells[4].style = PeonB;
-  celdas.rows[7].cells[5].style = PeonB;
-  celdas.rows[7].cells[6].style = PeonB;
-  celdas.rows[7].cells[7].style = PeonB;
-  celdas.rows[7].cells[8].style = PeonB;
+  // Reset the board
+  for (var row = 1; row <= 8; row++) {
+    for (var col = 1; col <= 8; col++) {
+      tabla.rows[row].cells[col].style = "background-image: none; background-size: cover;";
+    }
+  }
 
-  celdas.rows[8].cells[3].style = AlfilB;
-  celdas.rows[1].cells[3].style = AlfilN;
-  celdas.rows[8].cells[6].style = AlfilB;
-  celdas.rows[1].cells[6].style = AlfilN;
+  // Clear the textarea
+  textarea.value = "";
 
-  celdas.rows[8].cells[1].style = TorreB;
-  celdas.rows[1].cells[1].style = TorreN;
-  celdas.rows[8].cells[8].style = TorreB;
-  celdas.rows[1].cells[8].style = TorreN;
+  // Reset the turn element
+  turnoElement.innerHTML = "";
 
-  celdas.rows[8].cells[1].style = TorreB;
-  celdas.rows[1].cells[1].style = TorreN;
-  celdas.rows[8].cells[8].style = TorreB;
-  celdas.rows[1].cells[8].style = TorreN;
-
-  celdas.rows[8].cells[2].style = CaballoB;
-  celdas.rows[1].cells[2].style = CaballoN;
-  celdas.rows[8].cells[7].style = CaballoB;
-  celdas.rows[1].cells[7].style = CaballoN;
-
-  celdas.rows[8].cells[2].style = CaballoB;
-  celdas.rows[1].cells[2].style = CaballoN;
-
-  celdas.rows[8].cells[4].style = ReyB;
-  celdas.rows[1].cells[4].style = ReyN;
-
-  celdas.rows[8].cells[5].style = ReinaB;
-  celdas.rows[1].cells[5].style = ReinaN;
+  // Reset any other variables or states as needed
 }
