@@ -677,22 +677,29 @@ function convertirRenglon(renglon) {
 
 
 function restart() {
-  var tabla = document.getElementById("Tablero");
-  var textarea = document.getElementById("textarea1");
-  var turnoElement = document.getElementById("turno");
-
-  // Reset the board
-  for (var row = 1; row <= 8; row++) {
-    for (var col = 1; col <= 8; col++) {
-      tabla.rows[row].cells[col].style = "background-image: none; background-size: cover;";
-    }
-  }
+  // Reset the game state
+  contadorPaso = 0;
+  j = 0;
+  tokens = "";
+  i = 0;
+  turno = true;
+  texto = "";
+  columna = "";
+  renglon = "";
+  posicion = "";
+  jaque = "";
 
   // Clear the textarea
-  textarea.value = "";
+  document.getElementById("textarea1").value = "";
 
-  // Reset the turn element
-  turnoElement.innerHTML = "";
+  // Clear the turn display
+  document.getElementById("turno").innerHTML = "";
 
-  // Reset any other variables or states as needed
+  // Clear the board
+  var tabla = document.getElementById("Tablero");
+  for (var row = 0; row < tabla.rows.length; row++) {
+    for (var col = 0; col < tabla.rows[row].cells.length; col++) {
+      tabla.rows[row].cells[col].style = borrarCelda;
+    }
+  }
 }
