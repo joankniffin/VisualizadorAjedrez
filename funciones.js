@@ -732,4 +732,39 @@ function restart() {
 
   tabla.rows[8].cells[5].style = "background-image: url(ReinaB.png); background-size:cover;";
   tabla.rows[1].cells[5].style = "background-image: url(ReinaN.png); background-size:cover;";
+  tabla.rows[3].cells[1].style = borrarCelda;
+  tabla.rows[3].cells[2].style = borrarCelda;
+  tabla.rows[3].cells[3].style = borrarCelda;
+  tabla.rows[3].cells[4].style = borrarCelda;
+  tabla.rows[3].cells[5].style = borrarCelda;
+  tabla.rows[3].cells[6].style = borrarCelda;
+  tabla.rows[3].cells[7].style = borrarCelda;
+  tabla.rows[3].cells[8].style = borrarCelda;
+
+  tabla.rows[4].cells[1].style = borrarCelda;
+  tabla.rows[4].cells[2].style = borrarCelda;
+  tabla.rows[4].cells[3].style = borrarCelda;
+  tabla.rows[4].cells[4].style = borrarCelda;
+  tabla.rows[4].cells[5].style = borrarCelda;
+  tabla.rows[4].cells[6].style = borrarCelda;
+  tabla.rows[4].cells[7].style = borrarCelda;
+  tabla.rows[4].cells[8].style = borrarCelda;
+
+  tabla.rows[5].cells[1].style = borrarCelda;
+  tabla.rows[5].cells[2].style = borrarCelda;
+  tabla.rows[5].cells[3].style = borrarCelda;
+  tabla.rows[5].cells[4].style = borrarCelda;
+  tabla.rows[5].cells[5].style = borrarCelda;
+  tabla.rows[5].cells[6].style = borrarCelda;
+  tabla.rows[5].cells[7].style = borrarCelda;
+  tabla.rows[5].cells[8].style = borrarCelda;
+
+  tabla.rows[6].cells[1].style = borrarCelda;
+  tabla.rows[6].cells[2].style = borrarCelda;
+  tabla.rows[6].cells[3].style = borrarCelda;
+  tabla.rows[6].cells[4].style = borrarCelda;
+  tabla.rows[6].cells[5].style = borrarCelda;
+  tabla.rows[6].cells[6].style = borrarCelda;
+  tabla.rows[6].cells[7].style = borrarCelda;
+  tabla.rows[6].cells[8].style = borrarCelda;
 }
