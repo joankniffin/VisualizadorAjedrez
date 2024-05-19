@@ -676,7 +676,7 @@ function convertirRenglon(renglon) {
 
 
 
-function restartgame() {
+function restart() {
   // Reset the game state
   contadorPaso = 0;
   j = 0;
