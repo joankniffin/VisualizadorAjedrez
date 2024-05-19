@@ -676,13 +676,52 @@ function convertirRenglon(renglon) {
 
 
 
-function recorrer() {
+function restart() {
   var celdas = document.getElementById("Tablero");
+  celdas.rows[2].cells[1].style = PeonN;
+  celdas.rows[2].cells[2].style = PeonN;
+  celdas.rows[2].cells[3].style = PeonN;
+  celdas.rows[2].cells[4].style = PeonN;
+  celdas.rows[2].cells[5].style = PeonN;
+  celdas.rows[2].cells[6].style = PeonN;
+  celdas.rows[2].cells[7].style = PeonN;
+  celdas.rows[2].cells[8].style = PeonN;
 
-  for (let r = 0; r < 9; r++) {
-    for (let c = 0; c < 9; c++) {
-      alert(r + " " + c + " " + celdas.rows[r].cells[c].style.backgroundImage);
+  celdas.rows[7].cells[1].style = PeonB;
+  celdas.rows[7].cells[2].style = PeonB;
+  celdas.rows[7].cells[3].style = PeonB;
+  celdas.rows[7].cells[4].style = PeonB;
+  celdas.rows[7].cells[5].style = PeonB;
+  celdas.rows[7].cells[6].style = PeonB;
+  celdas.rows[7].cells[7].style = PeonB;
+  celdas.rows[7].cells[8].style = PeonB;
 
-    }
-  }
+  celdas.rows[8].cells[3].style = AlfilB;
+  celdas.rows[1].cells[3].style = AlfilN;
+  celdas.rows[8].cells[6].style = AlfilB;
+  celdas.rows[1].cells[6].style = AlfilN;
+
+  celdas.rows[8].cells[1].style = TorreB;
+  celdas.rows[1].cells[1].style = TorreN;
+  celdas.rows[8].cells[8].style = TorreB;
+  celdas.rows[1].cells[8].style = TorreN;
+
+  celdas.rows[8].cells[1].style = TorreB;
+  celdas.rows[1].cells[1].style = TorreN;
+  celdas.rows[8].cells[8].style = TorreB;
+  celdas.rows[1].cells[8].style = TorreN;
+
+  celdas.rows[8].cells[2].style = CaballoB;
+  celdas.rows[1].cells[2].style = CaballoN;
+  celdas.rows[8].cells[7].style = CaballoB;
+  celdas.rows[1].cells[7].style = CaballoN;
+
+  celdas.rows[8].cells[2].style = CaballoB;
+  celdas.rows[1].cells[2].style = CaballoN;
+
+  celdas.rows[8].cells[4].style = ReyB;
+  celdas.rows[1].cells[4].style = ReyN;
+
+  celdas.rows[8].cells[5].style = ReinaB;
+  celdas.rows[1].cells[5].style = ReinaN;
 }
