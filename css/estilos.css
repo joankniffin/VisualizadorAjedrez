@@ -76,3 +76,19 @@ textarea {
     resize: vertical;  /* Allowing vertical resize only */
 }
 
+.p_filas {
+    display: flex;
+    font-size: large;
+    height: 65px;
+    grid-column: 2;
+    justify-content: space-around;
+}
+
+.p_columna {
+    margin-left: 27px;
+    display: inline-block;
+    width: 50px;
+    grid-column: 1;
+    justify-self: center;
+}
+
