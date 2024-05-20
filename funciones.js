@@ -70,7 +70,7 @@ function pasos() {
     pieza = "peon";
     jaque = "";
 
-    if (tokens[i].match(".x.")) {
+    if (tokens[i] && tokens[i].match(".x.")) {
       posicion = tokens[i].slice(2).split(/(\d+)/);
       columna = posicion[0].replace("x", "");
       renglon = posicion[1];
