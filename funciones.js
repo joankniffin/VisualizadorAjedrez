@@ -29,27 +29,27 @@ function placePieces() {
   for (let col = 0; col < 8; col++) {
     const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
     const white_id = letters[col] + 2;
-    document.getElementById(white_id).style.backgroundImage = 'url(img/PeonB.png)';
+    document.getElementById(white_id).style.backgroundImage = 'url(PeonB.png)';
     const black_id = letters[col] + 7;
-    document.getElementById(black_id).style.backgroundImage = 'url(img/PeonN.png)';
+    document.getElementById(black_id).style.backgroundImage = 'url(PeonN.png)';
   }
-  document.getElementById('a1').style.backgroundImage = 'url(img/TorreB.png)';
-  document.getElementById('b1').style.backgroundImage = 'url(img/CaballoB.png)';
-  document.getElementById('c1').style.backgroundImage = 'url(img/AlfilB.png)';
-  document.getElementById('d1').style.backgroundImage = 'url(img/ReinaB.png)';
-  document.getElementById('e1').style.backgroundImage = 'url(img/ReyB.png)';
-  document.getElementById('f1').style.backgroundImage = 'url(img/AlfilB.png)';
-  document.getElementById('g1').style.backgroundImage = 'url(img/CaballoB.png)';
-  document.getElementById('h1').style.backgroundImage = 'url(img/TorreB.png)';
+  document.getElementById('a1').style.backgroundImage = 'url(TorreB.png)';
+  document.getElementById('b1').style.backgroundImage = 'url(CaballoB.png)';
+  document.getElementById('c1').style.backgroundImage = 'url(AlfilB.png)';
+  document.getElementById('d1').style.backgroundImage = 'url(ReinaB.png)';
+  document.getElementById('e1').style.backgroundImage = 'url(ReyB.png)';
+  document.getElementById('f1').style.backgroundImage = 'url(AlfilB.png)';
+  document.getElementById('g1').style.backgroundImage = 'url(CaballoB.png)';
+  document.getElementById('h1').style.backgroundImage = 'url(TorreB.png)';
 
-  document.getElementById('a8').style.backgroundImage = 'url(img/TorreN.png)';
-  document.getElementById('b8').style.backgroundImage = 'url(img/CaballoN.png)';
-  document.getElementById('c8').style.backgroundImage = 'url(img/AlfilN.png)';
-  document.getElementById('d8').style.backgroundImage = 'url(img/ReinaN.png)';
-  document.getElementById('e8').style.backgroundImage = 'url(img/ReyN.png)';
-  document.getElementById('f8').style.backgroundImage = 'url(img/AlfilN.png)';
-  document.getElementById('g8').style.backgroundImage = 'url(img/CaballoN.png)';
-  document.getElementById('h8').style.backgroundImage = 'url(img/TorreN.png)';
+  document.getElementById('a8').style.backgroundImage = 'url(TorreN.png)';
+  document.getElementById('b8').style.backgroundImage = 'url(CaballoN.png)';
+  document.getElementById('c8').style.backgroundImage = 'url(AlfilN.png)';
+  document.getElementById('d8').style.backgroundImage = 'url(ReinaN.png)';
+  document.getElementById('e8').style.backgroundImage = 'url(ReyN.png)';
+  document.getElementById('f8').style.backgroundImage = 'url(AlfilN.png)';
+  document.getElementById('g8').style.backgroundImage = 'url(CaballoN.png)';
+  document.getElementById('h8').style.backgroundImage = 'url(TorreN.png)';
 }
 
 function clearBoard() {
@@ -144,14 +144,14 @@ function stepButton() {
     if (turno == 'blancas') {
       for (let i = fila; i >= 1; i--) {
         celda_inicial = columna + i;
-        if (compareBackgroundImage(celda_inicial, 'url(img/PeonB.png)')) {
+        if (compareBackgroundImage(celda_inicial, 'url(PeonB.png)')) {
           movePiece(celda_inicial, celda_final);
         }
       }
     } else {
       for (let index = parseInt(fila); index <= 8; index++) {
         celda_inicial = columna + index;
-        if (compareBackgroundImage(celda_inicial, 'url(img/PeonN.png)')) {
+        if (compareBackgroundImage(celda_inicial, 'url(PeonN.png)')) {
           movePiece(celda_inicial, celda_final);
         }
       }
@@ -168,7 +168,7 @@ function stepButton() {
       debe_ser = "black";
     }
     if (turno == 'blancas') {
-      lista_alfiles = traverseSquaresLookingFor('url(img/AlfilB.png)');
+      lista_alfiles = traverseSquaresLookingFor('url(AlfilB.png)');
       for (var i = 0; i < lista_alfiles.length; i++) {
         elemento = document.getElementById(lista_alfiles[i])
         if (elemento.classList.contains(debe_ser)) {
@@ -176,7 +176,7 @@ function stepButton() {
         }
       }
     } else {
-      lista_alfiles = traverseSquaresLookingFor('url(img/AlfilN.png)');
+      lista_alfiles = traverseSquaresLookingFor('url(AlfilN.png)');
       for (var i = 0; i < lista_alfiles.length; i++) {
         elemento = document.getElementById(lista_alfiles[i])
         if (elemento.classList.contains(debe_ser)) {
@@ -190,7 +190,7 @@ function stepButton() {
     pieza_actual = "Caballo";
     if (turno == 'blancas') {
       lista_c = [];
-      lista_caballos = traverseSquaresLookingFor('url(img/CaballoB.png)');
+      lista_caballos = traverseSquaresLookingFor('url(CaballoB.png)');
       possible_moves = getKnightMoves(celda_final);
       console.log(lista_caballos + " | " + possible_moves)
       for (let i = 0; i < lista_caballos.length; i++) {
@@ -203,7 +203,7 @@ function stepButton() {
       movePiece(lista_c[0], celda_final);
     } else {
       lista_c = [];
-      lista_caballos = traverseSquaresLookingFor('url(img/CaballoN.png)');
+      lista_caballos = traverseSquaresLookingFor('url(CaballoN.png)');
       possible_moves = getKnightMoves(celda_final);
       for (let i = 0; i < lista_caballos.length; i++) {
         for (let j = 0; j < possible_moves.length; j++) {
@@ -220,7 +220,7 @@ function stepButton() {
     pieza_actual = "Torre";
 
     if (turno == 'blancas') {
-      lista_torres = traverseSquaresLookingFor('url(img/TorreB.png)');
+      lista_torres = traverseSquaresLookingFor('url(TorreB.png)');
       possible_rook = [];
       for (var i = 0; i < lista_torres.length; i++) {
         celda = lista_torres[i];
@@ -234,7 +234,7 @@ function stepButton() {
         movePiece(possible_rook[0], celda_final);
       }
     } else {
-      lista_torres = traverseSquaresLookingFor('url(img/TorreN.png)');
+      lista_torres = traverseSquaresLookingFor('url(TorreN.png)');
       possible_rook = [];
       for (var i = 0; i < lista_torres.length; i++) {
         celda = lista_torres[i];
@@ -254,10 +254,10 @@ function stepButton() {
   if (jugada_actual.startsWith('Q')) {
     pieza_actual = "Dama";
     if (turno == 'blancas') {
-      lista_dama = traverseSquaresLookingFor('url(img/ReinaB.png)');
+      lista_dama = traverseSquaresLookingFor('url(ReinaB.png)');
       movePiece(lista_dama[0], celda_final);
     } else {
-      lista_dama = traverseSquaresLookingFor('url(img/ReinaN.png)');
+      lista_dama = traverseSquaresLookingFor('url(ReinaN.png)');
       movePiece(lista_dama[0], celda_final);
     }
   }
@@ -265,9 +265,9 @@ function stepButton() {
   if (jugada_actual.startsWith('K')) {
     pieza_actual = "Rey";
     if (turno == 'blancas') {
-      celda_inicial = traverseSquaresLookingFor('url(img/ReyB.png)');
+      celda_inicial = traverseSquaresLookingFor('url(ReyB.png)');
     } else {
-      celda_inicial = traverseSquaresLookingFor('url(img/ReyN.png)');
+      celda_inicial = traverseSquaresLookingFor('url(ReyN.png)');
     }
     movePiece(celda_inicial[0], celda_final);
 
