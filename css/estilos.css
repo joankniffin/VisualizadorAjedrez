@@ -1,0 +1,78 @@
+/* Main container styling to implement center alignment and grid layout */
+#container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;  /* Center items vertically within the container */
+    justify-content: center;  /* Center items horizontally within the container */
+    padding: 20px;
+    background-color: #f3f3f3;  /* Light background for the overall board frame */
+}
+
+/* Chessboard specific styling */
+#chessboard {
+    grid-column: 2;  /* Position the chessboard in the middle column using grid placement */
+    width: 640px;  /* Set fixed size to maintain aspect ratio */
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;  /* Enable wrapping of child elements (squares) */
+    border: 8px solid #221e1b;  /* Dark border for classic look */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);  /* Subtle shadow for a 3D effect */
+}
+
+/* Styling for each square of the chessboard */
+.square {
+    width: 80px;  /* Slightly larger squares for better visual */
+    height: 80px;
+    background-size: cover;
+}
+
+/* Color scheme for black and white squares using refined palette */
+.black {
+    background-color: #474641;
+}
+
+.white {
+    background-color: #dcd7c9;
+}
+
+/* Header styling for title or any top captions */
+h1 {
+    font-size: 26px;  /* Slightly larger font for prominence */
+    margin-bottom: 20px;  /* Spacing for aesthetic separation */
+    color: #525252;  /* Soft color for readability */
+    text-align: center;
+}
+
+/* Button styling */
+button {
+    display: inline-flex;  /* Inline-flex to allow alignment with other inline items */
+    padding: 10px 24px;  /* Increased padding for better touch area */
+    font-size: 18px;  /* Larger font size for readability */
+    border-radius: 8px;  /* Smooth corners */
+    background-color: #8a948d;  /* Neutral, earthy tone for button */
+    color: white;
+    cursor: pointer;  /* Pointer to indicate clickable */
+    transition: background-color 0.3s;  /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #687169;  /* Darken the button on hover for interactive feedback */
+}
+
+/* Enhanced styling for form elements like select, input, and textarea within the chess context */
+select, input[type="text"], textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;  /* Consistent rounded corners */
+    border: 1px solid #ccc;  /* Subtle border */
+    margin: 5px;  /* Space elements out slightly */
+}
+
+/* Specific to textarea for comments or game logs */
+textarea {
+    width: 100%;  /* Full-width to fit container */
+    height: 120px;  /* Height sufficient for multiple lines of text */
+    resize: vertical;  /* Allowing vertical resize only */
+}
+
